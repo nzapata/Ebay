@@ -1,0 +1,21 @@
+<input type="search" ng-model="search">
+<button ng-click='h(search)'>send</button>
+
+<ul ng-repeat="item in items">
+  <br/>
+  <br/>
+  <li >
+    {{item.title[0]}}
+  </li>
+
+  <li><img  ng-src="{{item.galleryURL[0]}}" > </li>
+  <li>    {{item.country[0]}}</li>
+  <li> {{item.paymentMethod[0]}}</li>
+  <span>{{item.location[0]}}</span>
+  <li>{{item.sellingStatus[0].currentPrice[0].__value__ | currency    }}  </li>
+  <li>{{item.shippingInfo[0].shipToLocations[0]}}</li>
+
+
+</ul>
+</div>
+</div>
